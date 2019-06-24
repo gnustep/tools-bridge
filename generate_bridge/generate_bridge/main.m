@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+extern int run(int argc, const char *argv[]);
+
 int main(int argc, const char * argv[]) {
+    int result = 0;
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        result = run(argc, argv);
     }
-    return 0;
+    return result;
 }
